@@ -9,10 +9,10 @@ module.exports = (React, ReactNative, { constants, model, styles }) => {
   const Menu = React.createClass({
     displayName: 'Menu',
     propTypes: {
-      name: PropTypes.string,
-      onSelect: PropTypes.func,
-      onOpen: PropTypes.func,
-      onClose: PropTypes.func
+      name: React.PropTypes.string,
+      onSelect: React.PropTypes.func,
+      onOpen: React.PropTypes.func,
+      onClose: React.PropTypes.func
     },
     getDefaultProps() {
       return {
