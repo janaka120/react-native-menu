@@ -1,4 +1,5 @@
 const TimerMixin = require('react-timer-mixin');
+const PropTypes = require('prop-types');
 
 module.exports = (React, ReactNative, { constants, model, styles }) => {
   const {
@@ -9,10 +10,10 @@ module.exports = (React, ReactNative, { constants, model, styles }) => {
   const Menu = React.createClass({
     displayName: 'Menu',
     propTypes: {
-      name: React.PropTypes.string,
-      onSelect: React.PropTypes.func,
-      onOpen: React.PropTypes.func,
-      onClose: React.PropTypes.func
+      name: PropTypes.string,
+      onSelect: PropTypes.func,
+      onOpen: PropTypes.func,
+      onClose: PropTypes.func
     },
     getDefaultProps() {
       return {
